@@ -1,6 +1,6 @@
 class CustomsController < ApplicationController
   before_action :set_custom, only: [:show, :update, :destroy]
-
+  before_action :authorize_request, only: [:create, :update, :destroy]
   # GET /customs
   def index
     @customs = Custom.all
@@ -16,7 +16,7 @@ class CustomsController < ApplicationController
   # POST /customs
   def create
     @custom = Custom.new(custom_params)
-
+    @custom.user = @current_user
     if @custom.save
       render json: @custom, status: :created, location: @custom
     else
@@ -46,6 +46,6 @@ class CustomsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def custom_params
-      params.require(:custom).permit(:name, :rocker, :height, :volume, :tail_width)
+      params.require(:custom).permit(:name, :rocker, :height, :volume, :tail_width, :image_url)
     end
 end

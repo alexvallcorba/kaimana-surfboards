@@ -11,7 +11,9 @@ Custom.destroy_all
 Surfboard.destroy_all
 User.destroy_all
 
-@test = User.create!(
+
+
+@user = User.create!(
 username: 'Test',
 email: 'test@test1.com',
 password: '123457'
@@ -21,12 +23,14 @@ puts "#{User.count} users created"
 
 
 @testcustom = Custom.create!(
+
   name: 'TEST CUSTOM', 
   rocker: 2.3,
   height: 6.3,
   volume: 20.3,
   tail_width: 3.6,
-  image_url: 'https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633389075/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/customboard_bv4cbn.png'
+  image_url: 'https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633389075/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/customboard_bv4cbn.png',
+  user: @user
 )
 
 
