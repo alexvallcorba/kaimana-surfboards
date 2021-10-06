@@ -4,21 +4,21 @@ import { Link } from 'react-router-dom'
 export default function Surfboards(props) {
   return (
     <>
-      <div>
+      <div className="surfboards-list">
         <h3>SURFBOARDS</h3>
       </div>
       
       {props.surfboards.map((surfboard) => (
         <div key={surfboard.id}>
           <Link to={`/surfboards/${surfboard.id}`}>
-            <div className= 'surfboard'>
-            {surfboard.image_url}
-            <p>{surfboard.name}</p>
-            </div>
+            <img src={surfboard.image_url}/>
           </Link>
-       
+            <p>{surfboard.name}</p>
         </div>
       ))}
     </>
   );
 }
+            
+            
+       

@@ -11,7 +11,7 @@
 
   .kaimana-logo {
     height: 50%; 
-    border: rgb(208, 255, 0) 4px solid;
+    /* border: rgb(208, 255, 0) 4px solid; */
     margin-top: 15px;
 
   }
@@ -19,10 +19,11 @@
   .link {
     display: flex;
     flex-direction: row;
-    border: red 4px solid;
+    /* border: red 4px solid; */
     color: white;
     display: flex;
     justify-content: flex-end;
+    padding-left: 50px;
 
   }
 
@@ -30,4 +31,5 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 20px;
-    margin-top: 50px;  }
+    margin-top: 50px;
+    }

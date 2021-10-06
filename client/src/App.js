@@ -6,7 +6,7 @@ import './App.css';
 import Layout from './layouts/Layout1';
 import SignIn from './screens/signin/SignIn'
 import SignUp from './screens/signup/SignUp';
-import Main from './containers/Main/Main';
+import Main from './containers/main/Main';
 
 import {
   signInUser,

@@ -14,6 +14,7 @@ export const signUpUser = async (registerData) => {
   return resp.data.user;
 };
 
+
 export const verifyUser = async () => {
   const token = localStorage.getItem('authToken');
   if (token) {

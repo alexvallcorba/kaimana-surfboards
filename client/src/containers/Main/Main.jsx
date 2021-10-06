@@ -3,9 +3,8 @@
 
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
-import { getAllCustoms, postCustom, deleteCustom, putCustom } from '../../services/Customs';
-// import Layout from "../../layouts/Layout1";
-import { getAllSurfboards } from '../../services/Surfboards';
+import { getAllCustoms, postCustom, deleteCustom, putCustom } from '../../services/customs';
+import { getAllSurfboards } from '../../services/surfboards';
 import Home from '../../screens/home/Home';
 import Surfboards from '../../screens/surfboards/Surfboards';
 import Customs from '../../screens/customs/Customs';
@@ -36,6 +35,8 @@ export default function MainContainer() {
     fetchSurfboards();
   }, []);
 
+  
+
   const handleCreateCustom = async (customData) => {
     const newCustom = await postCustom(customData);
     setCustoms((prevState) => [...prevState, newCustom]);
@@ -60,14 +61,12 @@ export default function MainContainer() {
   return (
     <Switch>
       {/* <Layout> */}
-      <Route path="/">
-          <Home  />
-      </Route>
-      <Route path='/surfboards'>
-        <Surfboards surfboards={surfboards} />
-      </Route>
       <Route path='/surfboards/:id'>
         <SurfboardDetail surfboards={surfboards} />
+      </Route>
+      
+      <Route path='/surfboards'>
+        <Surfboards surfboards={surfboards} />
       </Route>
       <Route path='/customs/:id/edit'>
         <EditCustom customs={customs} handleEditCustom={handleEditCustom} />
@@ -81,8 +80,9 @@ export default function MainContainer() {
       <Route path='/customs'>
         <Customs customs={customs} handleCustomDelete={handleCustomDelete} />
       </Route>
-      <Route path='/surfboards/:id'>
-        <CustomDetail customs={customs} />
+      
+      <Route path="/">
+          <Home  />
       </Route>
       
       {/* </Layout> */}
