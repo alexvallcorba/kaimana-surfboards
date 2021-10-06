@@ -1,3 +1,7 @@
+import api from './api-config';
+
+
+
 export const getAllSurfboards = async () => {
   const resp = await api.get('/surfboards');
   return resp.data;

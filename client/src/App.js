@@ -3,14 +3,14 @@ import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import './App.css';
 
-import Layout from './layouts/Layout';
+import Layout from './layouts/Layout1';
 import SignIn from './screens/signin/SignIn'
 import SignUp from './screens/signup/SignUp';
-import Main from './containers/Main';
+import Main from './containers/Main/Main';
 
 import {
-  loginUser,
-  registerUser,
+  signInUser,
+  signUpUser,
   verifyUser,
   removeToken,
 } from './services/auth';
@@ -28,13 +28,13 @@ function App() {
   }, []);
 
   const handleSignIn = async (loginData) => {
-    const userData = await loginUser(loginData);
+    const userData = await signInUser(loginData);
     setCurrentUser(userData);
     history.push('/');
   };
 
   const handleSignUp = async (registerData) => {
-    const userData = await registerUser(registerData);
+    const userData = await signUpUser(registerData);
     setCurrentUser(userData);
     history.push('/');
   };
@@ -49,11 +49,11 @@ function App() {
     <div className='App'>
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
-          <Route path='/signin'>
-            <SignIn handleLogin={handleLogin} />
+          <Route path='/sign-in'>
+            <SignIn handleSignIn={handleSignIn} />
           </Route>
-          <Route path='/sigup'>
-            <SignUp handleRegister={handleRegister} />
+          <Route path='/sign-up'>
+            <SignUp handleSignUp={handleSignUp} />
           </Route>
           <Route path='/'>
             <Main />

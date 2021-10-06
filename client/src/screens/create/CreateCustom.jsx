@@ -1,4 +1,5 @@
-import {useState} from 'react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function CreateCustom(props) {
   const [formData, setFormData] = useState({
@@ -28,41 +29,42 @@ export default function CreateCustom(props) {
           onChange={handleChange}
         />
       <label>ROCKER</label>
-        
         <input
           type='text'
-          name='name'
-          value={formData.name}
+          name='rocker'
+          value={formData.rocker}
           onChange={handleChange}
         />
+
       <label>HEIGHT</label>
-        
         <input
           type='text'
-          name='name'
-          value={formData.name}
+          name='height'
+          value={formData.height}
           onChange={handleChange}
         />
-      
       
       <label>VOLUME</label>
-        
         <input
           type='text'
-          name='name'
-          value={formData.name}
+          name='volume'
+          value={formData.volume}
           onChange={handleChange}
         />
+        
       <label>TAIL WIDTH</label>
         <input
           type='text'
-          name='name'
-          value={formData.name}
+          name='tail_width'
+          value={formData.tail_width}
           onChange={handleChange}
         />
-      <br/>
-      <button>Submit</button>
-    </form>
+        <br />
+        <button>
+          CREATE
+          <Link to="/customs"></Link>    
+        </button>
+        </form>
     </div>
   );
 }

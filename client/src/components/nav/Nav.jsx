@@ -26,7 +26,7 @@ const Nav = ({ user }) => {
             <nav>
             <div className="nav">
                   <Link to="/">
-                    <img src="https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633048002/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/kaimana-logo_gurzrk.png"/>
+                    <img alt="Kaimana Logo" src="https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633048002/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/kaimana-logo_gurzrk.png"/>
                   </Link>
                     <div className="links">
                         {user && <div className="link welcome">Welcome, {user.username}</div>}

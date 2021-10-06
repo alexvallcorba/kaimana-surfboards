@@ -1,14 +1,14 @@
 // import Layout from "../../layouts/Layout1";
 import React from "react";
 
-function SurfboardDetail() {
+function CustomDetail(props) {
   return (
     <div>
-      {/* <Layout userr={props.user}> */}
-        <h1>Surfboard</h1>
+      {/* <Layout user={props.user}> */}
+        <h1>CustomDetail</h1>
       {/* </Layout> */}
     </div>
   );
 }
 
-export default SurfboardDetail;
+export default CustomDetail;

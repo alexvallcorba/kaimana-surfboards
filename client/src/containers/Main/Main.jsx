@@ -3,14 +3,16 @@
 
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
-import { getAllCustoms, postCustom, deleteCustom, putCustom } from '../services/customs';
-import { getAllSurfboards } from '../services/surfboards';
-import Surfboards from '../screens/Surfboards';
-import Customs from '../screens/Customs';
-import CreateCustom from '../screens/CreateCustom';
-import EditCustom from '../screens/EditCustom';
-import CustomDetail from '../screens/CustomDetail';
-import SurfboardDetail from '../screens/SurfboardDetail';
+import { getAllCustoms, postCustom, deleteCustom, putCustom } from '../../services/Customs';
+// import Layout from "../../layouts/Layout1";
+import { getAllSurfboards } from '../../services/Surfboards';
+import Surfboards from '../../screens/surfboards/Surfboards';
+import Customs from '../../screens/customs/Customs';
+import CreateCustom from '../../screens/create/CreateCustom';
+import EditCustom from '../../screens/edit/EditCustom';
+import CustomDetail from '../../screens/customDetail/CustomDetail';
+import SurfboardDetail from '../../screens/surfboardDetail/SurfboardDetail';
+
 
 export default function MainContainer() {
   const [customs, setCustoms] = useState([]);
@@ -46,7 +48,7 @@ export default function MainContainer() {
 
   const handleEditCustom = async (id, customData) => {
     const updatedCustom = await putCustom(id, customData);
-    setFoods((prevState) =>
+    setCustoms((prevState) =>
       prevState.map((custom) => {
         return custom.id === Number(id) ? updatedCustom : custom;
       })
@@ -56,10 +58,11 @@ export default function MainContainer() {
 
   return (
     <Switch>
+      {/* <Layout> */}
       <Route path='/surfboards'>
         <Surfboards surfboards={surfboards} />
       </Route>
-      <Route path='/customs/:id'>
+      <Route path='/surfboards/:id'>
         <SurfboardDetail surfboards={surfboards} />
       </Route>
       <Route path='/customs/:id/edit'>
@@ -68,12 +71,17 @@ export default function MainContainer() {
       <Route path='/customs/:id'>
         <CustomDetail customs={customs} />
       </Route>
-      <Route path='/customs/new'>
+      <Route path='/build-custom'>
         <CreateCustom handleCreateCustom={handleCreateCustom} />
       </Route>
       <Route path='/customs'>
         <Customs customs={customs} handleCustomDelete={handleCustomDelete} />
       </Route>
+      <Route path='/surfboards/:id'>
+        <CustomDetail customs={customs} />
+      </Route>
+      
+      {/* </Layout> */}
     </Switch>
   );
 }

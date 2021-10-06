@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+// import Layout from "../../layouts/Layout1";
 import {useParams} from 'react-router-dom';
 
 export default function EditCustom(props) {
@@ -29,6 +30,7 @@ export default function EditCustom(props) {
 
   return (
     <div>
+      {/* <Layout userr={props.user}> */}
       <form onSubmit={(e) => {
         e.preventDefault()
         props.handleEditCustom(formData);
@@ -77,6 +79,7 @@ export default function EditCustom(props) {
         <br />
         <button>Submit</button>
       </form>
+      {/* </Layout> */}
     </div>
   );
 }
