@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const authenticatedOptions = (
     <>
-        <NavLink className="link1" to="/sign-out">SIGN OUT</NavLink>
+        <NavLink className="link" to="/sign-out">SIGN OUT</NavLink>
     </>
 )
 const unauthenticatedOptions = (
@@ -23,10 +23,10 @@ const alwaysOptions = (
 )
 const Nav = ({ user }) => {
         return (
-            <nav>
+            <nav className="nav-container">
             <div className="nav">
                   <Link to="/">
-                    <img alt="Kaimana Logo" src="https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633048002/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/kaimana-logo_gurzrk.png"/>
+                    <img class="kaimana-logo" alt="Kaimana Logo" src="https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633047999/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/kaimana-logo-white_pmd2fw.png"/>
                   </Link>
                     <div className="links">
                         {user && <div className="link welcome">Welcome, {user.username}</div>}

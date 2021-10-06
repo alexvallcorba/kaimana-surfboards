@@ -9,7 +9,7 @@ const Layout1 = (props) => {
         <div>
           <Nav user={props.user} />
         </div>
-        <Footer />
+        {/* <Footer /> */}
         <div>{props.children}</div>
       </div>
     </>

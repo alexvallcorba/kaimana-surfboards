@@ -1,0 +1,33 @@
+.nav {
+  
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    background-color: black;
+    opacity: 85%;
+    height: 6rem;
+  }
+
+  .kaimana-logo {
+    height: 50%; 
+    border: rgb(208, 255, 0) 4px solid;
+    margin-top: 15px;
+
+  }
+
+  .link {
+    display: flex;
+    flex-direction: row;
+    border: red 4px solid;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    margin-top: 50px;  }
