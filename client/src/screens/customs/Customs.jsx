@@ -1,10 +1,8 @@
-// import Layout from "../../layouts/Layout1";
 import { Link } from "react-router-dom";
 
 export default function Customs(props) {
   return (
     <div>
-      {/* <Layout user={props.user}> */}
         <h3>CUSTOMS</h3>
         {props.customs.map((custom) => (
           <div key={custom.id}>
@@ -20,7 +18,6 @@ export default function Customs(props) {
             <button>CART</button>
           </div>
         ))}
-      {/* </Layout> */}
     </div>
   );
 }

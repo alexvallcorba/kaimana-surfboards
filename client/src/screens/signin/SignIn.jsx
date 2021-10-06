@@ -47,7 +47,12 @@ export default function SignIn(props) {
           </label>
           <br />
           <h3 className="new-user"> New user?</h3>
-          <Link to="/sign-up">Create an Account</Link>
+        <Link to="/sign-up">Create an Account</Link>
+        <div>
+          <button>
+            LOGIN
+          </button>
+        </div>
         </form>
       {/* </Layout> */}
     </div>
