@@ -11,7 +11,7 @@ export const getOneCustom = async (id) => {
 };
 
 export const postCustom = async (customData) => {
-  const resp = await api.post('/customs', { Custom: customData });
+  const resp = await api.post('/customs', { custom: customData });
   return resp.data;
 };
 

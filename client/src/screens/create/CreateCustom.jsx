@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom'
 
 export default function CreateCustom(props) {
   const [formData, setFormData] = useState({
-    name: ''
+    name: '',
+    rocker: '',
+    height: '',
+    volume: '',
+    tail_width:''
   })
 
     const handleChange = (e) => {
@@ -27,6 +31,7 @@ export default function CreateCustom(props) {
           name='name'
           value={formData.name}
           onChange={handleChange}
+          required
         />
       <label>ROCKER</label>
         <input
@@ -34,6 +39,7 @@ export default function CreateCustom(props) {
           name='rocker'
           value={formData.rocker}
           onChange={handleChange}
+          required
         />
 
       <label>HEIGHT</label>
@@ -42,6 +48,7 @@ export default function CreateCustom(props) {
           name='height'
           value={formData.height}
           onChange={handleChange}
+          required
         />
       
       <label>VOLUME</label>
@@ -50,6 +57,7 @@ export default function CreateCustom(props) {
           name='volume'
           value={formData.volume}
           onChange={handleChange}
+          required
         />
         
       <label>TAIL WIDTH</label>
@@ -58,12 +66,13 @@ export default function CreateCustom(props) {
           name='tail_width'
           value={formData.tail_width}
           onChange={handleChange}
+          required
         />
         <br />
-        <button>
-          CREATE
-          <Link to="/customs"></Link>    
-        </button>
+          <button type="submit">
+            CREATE
+          </button>
+        
         </form>
     </div>
   );

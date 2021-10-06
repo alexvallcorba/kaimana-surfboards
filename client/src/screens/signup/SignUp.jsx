@@ -32,7 +32,8 @@ export default function SignUp(props) {
               type="text"
               name="username"
               value={formData.username}
-              onChange={handleChange}
+            onChange={handleChange}
+            
             />
           </label>
           <br />

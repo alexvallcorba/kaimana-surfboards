@@ -32,7 +32,8 @@ export default function SignIn(props) {
               type="text"
               name="username"
               value={formData.username}
-              onChange={handleChange}
+            onChange={handleChange}
+            required
             />
           </label>
           <br />
@@ -42,7 +43,9 @@ export default function SignIn(props) {
               type="password"
               name="password"
               value={formData.password}
-              onChange={handleChange}
+            onChange={handleChange}
+            required
+            
             />
           </label>
           <br />

@@ -6,9 +6,10 @@ export default function Customs(props) {
         <h3>CUSTOMS</h3>
         {props.customs.map((custom) => (
           <div key={custom.id}>
-            <Link to={`/customs/${custom.id}`}>
+            {/* <Link to={`/customs`}> */}
               <p>{custom.name}</p>
-            </Link>
+              <img class="custom-board" alt="custom board" src="https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633389075/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/customboard_bv4cbn.png"/>
+            {/* </Link> */}
             <Link to={`/customs/${custom.id}/edit`}>
               <button>EDIT</button>
             </Link>

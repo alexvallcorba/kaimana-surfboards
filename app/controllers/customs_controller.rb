@@ -10,6 +10,7 @@ class CustomsController < ApplicationController
 
   # GET /customs/1
   def show
+   
     render json: @custom
   end
 
@@ -18,7 +19,7 @@ class CustomsController < ApplicationController
     @custom = Custom.new(custom_params)
     @custom.user = @current_user
     if @custom.save
-      render json: @custom, status: :created, location: @custom
+      render json: @custom, status: :created
     else
       render json: @custom.errors, status: :unprocessable_entity
     end
@@ -46,6 +47,6 @@ class CustomsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def custom_params
-      params.require(:custom).permit(:name, :rocker, :height, :volume, :tail_width, :image_url)
+      params.require(:custom).permit(:name, :rocker, :height, :volume, :tail_width)
     end
 end
