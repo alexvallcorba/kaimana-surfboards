@@ -6,6 +6,7 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 import { getAllCustoms, postCustom, deleteCustom, putCustom } from '../../services/Customs';
 // import Layout from "../../layouts/Layout1";
 import { getAllSurfboards } from '../../services/Surfboards';
+import Home from '../../screens/home/Home';
 import Surfboards from '../../screens/surfboards/Surfboards';
 import Customs from '../../screens/customs/Customs';
 import CreateCustom from '../../screens/create/CreateCustom';
@@ -59,6 +60,9 @@ export default function MainContainer() {
   return (
     <Switch>
       {/* <Layout> */}
+      <Route path="/">
+          <Home  />
+      </Route>
       <Route path='/surfboards'>
         <Surfboards surfboards={surfboards} />
       </Route>
