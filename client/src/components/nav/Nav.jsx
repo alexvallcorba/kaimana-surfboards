@@ -3,11 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { Link } from "react-router-dom";
 
 
-const authenticatedOptions = (
-    <>
-        <NavLink className="link" to="/sign-out">SIGN OUT</NavLink>
-    </>
-)
+
 const unauthenticatedOptions = (
     <>
         <NavLink className="link" to="/sign-up">SIGN UP</NavLink>
@@ -21,7 +17,7 @@ const alwaysOptions = (
     
     </>
 )
-const Nav = ({ user }) => {
+const Nav = (props) => {
         return (
             <nav className="nav-container">
             <div className="nav">
@@ -29,9 +25,12 @@ const Nav = ({ user }) => {
                     <img class="kaimana-logo" alt="Kaimana Logo" src="https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633047999/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/kaimana-logo-white_pmd2fw.png"/>
                   </Link>
                     <div className="links">
-                        {user && <div className="link welcome">Welcome, {user.username}</div>}
+                        {props.currentUser && <div className="link welcome">Welcome, {props.currentUser.username}</div>}
                         {alwaysOptions}
-                        {user ? authenticatedOptions : unauthenticatedOptions}
+                {props.currentUser ? (
+                                  <button className="link" onClick={props.handleLogout} >SIGN OUT</button>
+
+                        ) :( unauthenticatedOptions)}
                     </div>
                 </div>
             </nav>

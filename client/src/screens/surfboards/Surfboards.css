@@ -1,8 +1,40 @@
 .surfboards-list {
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+
   height: 100%;
-  background-image: url("https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633050123/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/ezezaccardi-eze-zaccardi-savage-thrills-savagethrills-mctavishsurf-mc-tavish-mctavish-byronbay-australia-shape-shaper-surfboard-surfing-surf.jpg00794-1024x683_ngzmnd.png");
-  background-repeat: no-repeat;
+  background-image: url("https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633555215/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/surfboards-page_qbezg0.png");
+  /* background-repeat: no-repeat; */
   background-size: cover;
-  background-position: center center;
-  height: 100%;
+  /* background-position: center center; */
+  height: 100vh;
 }
+
+.surfboards-title {
+text-align: center;
+}
+
+.surfboard-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.surfboard-image {
+  height:300px;
+}
+
+.surfboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+  
