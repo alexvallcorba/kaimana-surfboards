@@ -1,6 +1,8 @@
 import './Nav.css'
 import { NavLink } from 'react-router-dom'
 import { Link } from "react-router-dom";
+import BurgerMenu from '../burgerMenu/BurgerMenu'
+
 
 
 
@@ -33,7 +35,8 @@ const Nav = (props) => {
 
                         ) :( unauthenticatedOptions)}
                     </div>
-                </div>
+            </div>
+              <BurgerMenu currentUser={props.currentUser} pageWrapId={"page-wrap"} outerContainerId={"App"} />
             </nav>
         )
 }

@@ -16,6 +16,13 @@
     margin-top: 15px;
 
   }
+  
+  .links {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    }
 
   .link {
     display: flex;
@@ -29,9 +36,17 @@
 
   }
 
-  .links {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 20px;
-    margin-top: 50px;
+  @media all and (max-width: 480px) {
+    .nav {
+      flex-direction: row;
+      width: 100%;
     }
+    .nav-block {
+      flex-direction: column;
+      width: 20%;
+    }
+    .links {
+      display: none;
+    }
+  }
+
