@@ -52,44 +52,43 @@ export default function EditCustom(props) {
           value={formData.name}
           onChange={handleChange}
         />
-        <label>ROCKER</label>
 
+        <label>ROCKER</label>
         <input
           type="text"
           name="name"
-          value={formData.name}
+          value={formData.rocker}
           onChange={handleChange}
         />
-        <label>HEIGHT</label>
 
+        <label>HEIGHT</label>
         <input
           type="text"
           name="name"
-          value={formData.name}
+          value={formData.height}
           onChange={handleChange}
         />
 
         <label>VOLUME</label>
-
         <input
           type="text"
           name="name"
-          value={formData.name}
+          value={formData.volume}
           onChange={handleChange}
         />
+
         <label>TAIL WIDTH</label>
         <input
           type="text"
           name="name"
-          value={formData.name}
+          value={formData.namtail_width}
           onChange={handleChange}
         />
         <br />
         <Link to="/customs">
-        <button>Submit</button>
+        <button className="name">EDIT</button>
         </Link>
       </form>
-      {/* </Layout> */}
     </div>
   );
 }
