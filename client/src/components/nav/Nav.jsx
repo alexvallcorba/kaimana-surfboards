@@ -11,7 +11,8 @@ const unauthenticatedOptions = (
     </>
 )
 const alwaysOptions = (
-    <>
+  <>
+    <NavLink className="link" to="/about">ABOUT</NavLink>
     <NavLink className="link" to="/surfboards">SHOP</NavLink>
     <NavLink className="link" to="/build-custom">BUILD A CUSTOM</NavLink>
     

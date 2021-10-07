@@ -12,6 +12,7 @@ import CreateCustom from '../../screens/create/CreateCustom';
 import EditCustom from '../../screens/edit/EditCustom';
 // import CustomDetail from '../../screens/customDetail/CustomDetail';
 import SurfboardDetail from '../../screens/surfboardDetail/SurfboardDetail';
+import About from '../../screens/about/About'
 
 
 export default function MainContainer() {
@@ -64,19 +65,22 @@ export default function MainContainer() {
       <Route path='/surfboards/:id'>
         <SurfboardDetail surfboards={surfboards} />
       </Route>
-      
+
       <Route path='/surfboards'>
         <Surfboards surfboards={surfboards} />
       </Route>
+      <Route path='/about'>
+        <About  />
+      </Route>
+
       <Route path='/build-custom'>
         <CreateCustom handleCreateCustom={handleCreateCustom} />
       </Route>
+
       <Route path='/customs/:id/edit'>
         <EditCustom customs={customs} handleEditCustom={handleEditCustom} />
       </Route>
-      {/* <Route path='/customs/:id'>
-        <CustomDetail customs={customs} />
-      </Route> */}
+      
       
       <Route path='/customs'>
         <Customs customs={customs} handleCustomDelete={handleCustomDelete} />
