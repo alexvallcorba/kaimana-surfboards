@@ -10,8 +10,8 @@ const Layout1 = (props) => {
         <div>
           <Nav currentUser={props.currentUser} handleLogout={props.handleLogout}/>
         </div>
-        {/* <Footer /> */}
         <main>{props.children}</main>
+        <Footer  />
       
     </>
   );

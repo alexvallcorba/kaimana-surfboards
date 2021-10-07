@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import Layout from "../../layouts/Layout1";
+import "./SignIn.css";
 
 export default function SignIn(props) {
   const [formData, setFormData] = useState({
@@ -18,46 +18,46 @@ export default function SignIn(props) {
 
   return (
     <div>
-      {/* <Layout> */}
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            props.handleSignIn(formData);
-          }}
-        >
-          <h3>Sign In</h3>
-          <label>
-            Username:
-            <input
-              type="text"
-              name="username"
-              value={formData.username}
+      <form
+        className="login-form"
+        onSubmit={(e) => {
+          e.preventDefault();
+          props.handleSignIn(formData);
+        }}
+      >
+        <div className="login-container">
+          <h1>SIGN IN</h1>
+
+          <input
+            className="input1"
+            placeholder="Username"
+            type="text"
+            name="username"
+            value={formData.username}
             onChange={handleChange}
             required
-            />
-          </label>
+          />
+
           <br />
-          <label>
-            Password:
-            <input
-              type="password"
-              name="password"
-              value={formData.password}
+
+          <input
+            className="input1"
+            placeholder="Password"
+            type="password"
+            name="password"
+            value={formData.password}
             onChange={handleChange}
             required
-            
-            />
-          </label>
+          />
           <br />
-          <h3 className="new-user"> New user?</h3>
-        <Link to="/sign-up">Create an Account</Link>
-        <div>
-          <button>
-            LOGIN
-          </button>
+          <div className="create-link">
+            <h2 className="new-user"> New user?</h2>
+            <Link className="create-account" to="/sign-up">Create an Account</Link>
+          </div>
+          <br />
+          <button className="button-login">LOGIN</button>
         </div>
-        </form>
-      {/* </Layout> */}
+      </form>
     </div>
   );
 }

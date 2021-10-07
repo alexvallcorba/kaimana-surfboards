@@ -22,6 +22,7 @@
     flex-direction: row;
     padding-bottom: 20px;
     margin-top: 50px;
+    resize: vertical;
     }
 
   .link {
@@ -52,6 +53,8 @@
     }
     .links {
       display: none;
+      width: 100%;
+      margin-top: 0;
     }
   }
 

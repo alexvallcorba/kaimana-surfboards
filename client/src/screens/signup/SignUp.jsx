@@ -33,7 +33,7 @@ export default function SignUp(props) {
             className="input"
             placeholder="Username"
             type="text"
-            name="Username"
+            name="username"
             value={formData.username}
             onChange={handleChange}
           />

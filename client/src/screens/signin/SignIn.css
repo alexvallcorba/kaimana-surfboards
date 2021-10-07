@@ -1,0 +1,64 @@
+
+  .input1 {
+    width: 100%;
+    padding: 25px;
+    margin: 0px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .button-login {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-left: 30px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    opacity: 0.9;
+    font-size: 15px;
+  }
+  
+  .button-login :hover {
+    opacity: 0.7;
+  }
+  
+  .login-container {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 350px;
+  }
+
+
+  .create-link {
+    display: flex;
+    /* align-content: center; */
+    justify-content: space-between;
+    flex-direction: row;
+
+
+  }
+
+  .create-account {
+    font-size: 25px;
+    text-decoration: none;
+    color: orange;
+    margin-top: 20px;
+    margin-left: 10px;
+
+
+  }
+  
+  
+  
+  
+  
+  
+  
+  
