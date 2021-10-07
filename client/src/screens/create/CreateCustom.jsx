@@ -69,11 +69,10 @@ export default function CreateCustom(props) {
           required
         />
         <br />
-        <Link to="/customs">
-          <button className="create">
+          <button type="submit">
             CREATE
           </button>
-          </Link>
+        
         </form>
     </div>
   );
