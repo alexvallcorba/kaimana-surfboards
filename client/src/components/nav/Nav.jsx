@@ -31,7 +31,7 @@ const Nav = (props) => {
                         {props.currentUser && <div className="link welcome">Welcome, {props.currentUser.username}</div>}
                         {alwaysOptions}
                 {props.currentUser ? (
-                                  <button className="link" onClick={props.handleLogout} >SIGN OUT</button>
+                                  <button id="signout-button" className="link" onClick={props.handleLogout} >SIGN OUT</button>
 
                         ) :( unauthenticatedOptions)}
                     </div>

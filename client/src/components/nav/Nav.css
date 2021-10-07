@@ -7,7 +7,7 @@
     background-color: black;
     opacity: 85%;
     height: 6rem;
-    position: fixed;
+    /* position: fixed; */
   }
 
   .kaimana-logo {
@@ -34,6 +34,11 @@
     padding-left: 50px;
     text-decoration: none;
 
+  }
+  #signout-button {
+    background: none;
+    border: none;
+    font-size: 16px;
   }
 
   @media all and (max-width: 480px) {

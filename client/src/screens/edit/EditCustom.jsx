@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom'
 export default function EditCustom(props) {
   const [formData, setFormData] = useState({
     name: "",
+    rocker: '',
+    height: '',
+    volume: '',
+    tail_width:''
   });
   const { id } = useParams();
 
