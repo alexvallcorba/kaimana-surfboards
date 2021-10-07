@@ -10,7 +10,7 @@ import Surfboards from '../../screens/surfboards/Surfboards';
 import Customs from '../../screens/customs/Customs';
 import CreateCustom from '../../screens/create/CreateCustom';
 import EditCustom from '../../screens/edit/EditCustom';
-import CustomDetail from '../../screens/customDetail/CustomDetail';
+// import CustomDetail from '../../screens/customDetail/CustomDetail';
 import SurfboardDetail from '../../screens/surfboardDetail/SurfboardDetail';
 import About from '../../screens/about/About'
 
@@ -82,9 +82,9 @@ export default function MainContainer() {
         <EditCustom customs={customs} handleEditCustom={handleEditCustom} />
       </Route>
       
-      <Route path='/customs/:id'>
+      {/* <Route path='/customs/:id'>
         <CustomDetail customs={customs} />
-      </Route>
+      </Route> */}
 
       <Route path='/customs'>
         <Customs customs={customs} handleCustomDelete={handleCustomDelete} />
