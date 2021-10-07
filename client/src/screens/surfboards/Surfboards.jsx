@@ -5,9 +5,11 @@ import "./Surfboards.css"
 export default function Surfboards(props) {
   return (
     <>
-        <h3 className="surfboards-title" >SURFBOARDS</h3>
+      <div className="surfboards-title">
+          <h1  >SURFBOARDS</h1>
+        </div>
       <div className="surfboards-list">
-
+      
         {props.surfboards.map((surfboard) => (
           <div className="surfboard-container">
             <div className=" surfboards-name" key={surfboard.id}>
