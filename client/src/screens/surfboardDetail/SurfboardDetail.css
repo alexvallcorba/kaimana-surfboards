@@ -1,20 +1,50 @@
+
+
+
+
 .details-container {
   display: flex;
-  height: 70%;
-  width: 95%;
+  height: 100%;
+  width: 100%;
   justify-content: space-around;
+  background-image: url("https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633555215/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/surfboards-page_qbezg0.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-
+h1{
+  text-align: center;
+}
+h3 {
+  margin-top: 40px;
+}
+p {
+  margin: 0px;
+}
 .surfboard-image {
-  /* border: rgb(234, 255, 0) solid 4px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  margin-left: 50px;
+  margin-top: 20px;
+
 }
 
 .board-image {
-  height: 500px;
-  margin-top: 25px;
+  height: 450px;
+
 }
+
+.surfboard-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  align-items: flex-start;
+  width: 40%;
+  height: 100%;
+  margin-top: 20px;
+}
+
