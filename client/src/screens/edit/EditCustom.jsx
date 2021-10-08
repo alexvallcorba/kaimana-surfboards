@@ -1,11 +1,16 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import './EditCustom.css'
 
 
 export default function EditCustom(props) {
   const [formData, setFormData] = useState({
-    name: "",
+    name: '',
+    rocker: '',
+    height: '',
+    volume: '',
+    tail_width:''
   });
   const { id } = useParams();
 
@@ -37,17 +42,21 @@ export default function EditCustom(props) {
   };
 
   return (
-    <div>
-      {/* <Layout userr={props.user}> */}
+    <div className="edit-page">
       <form
         onSubmit={(e) => {
           e.preventDefault();
           props.handleEditCustom(formData);
         }}
       >
-        <h3>EDIT YOUR CUSTOM</h3>
+        
+
+      <div className="edit-container">
+
+        <h3 className="edit-title" >EDIT YOUR CUSTOM</h3>
         <label>NAME</label>
-        <input
+          <input
+          className="input3"
           type="text"
           name="name"
           value={formData.name}
@@ -56,6 +65,7 @@ export default function EditCustom(props) {
         <label>ROCKER</label>
 
         <input
+          className="input3"
           type="text"
           name="rocker"
           value={formData.rocker}
@@ -64,6 +74,7 @@ export default function EditCustom(props) {
         <label>HEIGHT</label>
 
         <input
+          className="input3"
           type="text"
           name="height"
           value={formData.height}
@@ -73,6 +84,7 @@ export default function EditCustom(props) {
         <label>VOLUME</label>
 
         <input
+          className="input3"
           type="text"
           name="volume"
           value={formData.volume}
@@ -81,6 +93,7 @@ export default function EditCustom(props) {
 
         <label>TAIL WIDTH</label>
         <input
+          className="input3"
           type='text'
           name='tail_width'
           value={formData.tail_width}
@@ -88,10 +101,12 @@ export default function EditCustom(props) {
         />
         <br />
         <Link to="/customs">
-        <button>EDIT</button>
+            <button className="edit-button">
+              EDIT
+            </button>
         </Link>
+        </div>
       </form>
-      {/* </Layout> */}
     </div>
   );
 }
