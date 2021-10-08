@@ -16,11 +16,12 @@
 }
 
 .buttons-container{
-
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
+
 
 #b1{
   background-color: black;
@@ -31,4 +32,8 @@
   border: none;
   cursor: pointer;
   opacity: 0.9;
+}
+
+#b1:hover{
+color:yellow
 }
