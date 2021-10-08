@@ -1,0 +1,7 @@
+Footer {
+  display:flex;
+  align-items: flex-start;
+}
+.media-logos {
+  height: 50px;
+}

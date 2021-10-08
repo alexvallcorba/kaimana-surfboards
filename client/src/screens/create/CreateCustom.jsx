@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import './CreateCustom.css'
+
 
 export default function CreateCustom(props) {
   const [formData, setFormData] = useState({
@@ -19,14 +20,18 @@ export default function CreateCustom(props) {
     };
 
   return (
-    <div>
+    <div className="create-page">
     <form onSubmit={(e)=> {
       e.preventDefault()
       props.handleCreateCustom(formData);
-    }}>
-      <h3>BUILD YOUR CUSTOM</h3>
+      }}
+    >
+
+      <div className="create-container">
+      <h3 className="create-title">BUILD YOUR CUSTOM</h3>
       <label>NAME</label>
-        <input
+          <input
+          className="input2"
           type='text'
           name='name'
           value={formData.name}
@@ -34,7 +39,9 @@ export default function CreateCustom(props) {
           required
         />
       <label>ROCKER</label>
-        <input
+          <input
+          className="input2"
+            
           type='text'
           name='rocker'
           value={formData.rocker}
@@ -43,7 +50,9 @@ export default function CreateCustom(props) {
         />
 
       <label>HEIGHT</label>
-        <input
+          <input
+          className="input2"
+            
           type='text'
           name='height'
           value={formData.height}
@@ -52,7 +61,9 @@ export default function CreateCustom(props) {
         />
       
       <label>VOLUME</label>
-        <input
+          <input
+          className="input2"
+            
           type='text'
           name='volume'
           value={formData.volume}
@@ -61,7 +72,9 @@ export default function CreateCustom(props) {
         />
         
       <label>TAIL WIDTH</label>
-        <input
+          <input
+          className="input2"
+            
           type='text'
           name='tail_width'
           value={formData.tail_width}
@@ -69,11 +82,13 @@ export default function CreateCustom(props) {
           required
         />
         <br />
-          <button type="submit">
+          <button className="create-button" type="submit">
             CREATE
           </button>
-        
-        </form>
-    </div>
+          </div>
+      </form>
+      </div>
+    
+
   );
 }

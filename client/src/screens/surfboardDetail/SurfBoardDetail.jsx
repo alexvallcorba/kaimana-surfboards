@@ -27,7 +27,7 @@ export default function SurfboardDetail(props) {
         <h3>{surfboard.name}</h3>
       </div>
       <div className="surfboard-image">
-        <img src={surfboard.image_url} alt="surfboard image" />
+        <img src={surfboard.image_url} alt="surfboard" />
       </div>
       <div className="surfboard-description">
         <p>{surfboard.description}</p>
