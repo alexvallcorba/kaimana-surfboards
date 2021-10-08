@@ -16,9 +16,7 @@ export default function EditCustom(props) {
 
   useEffect(() => {
     const prefillFormData = () => {
-      const singleCustom = props.customs.find(
-        (custom) => custom.id === Number(id)
-      );
+      const singleCustom = props.customs.find(custom=> custom.id === Number(id))
       setFormData({
         name: singleCustom.name,
         rocker: singleCustom.rocker,
@@ -26,7 +24,6 @@ export default function EditCustom(props) {
         volume: singleCustom.volume,
         tail_width: singleCustom.tail_width
       });
-      // setFormData(singleCustom);
     };
     if (props.customs.length) {
       prefillFormData();
@@ -46,7 +43,7 @@ export default function EditCustom(props) {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          props.handleEditCustom(formData);
+          props.handleEditCustom(id, formData);
         }}
       >
         
@@ -100,11 +97,9 @@ export default function EditCustom(props) {
           onChange={handleChange}
         />
         <br />
-        <Link to="/customs">
-            <button className="edit-button">
+            <button className="edit-button" type="submit">
               EDIT
             </button>
-        </Link>
         </div>
       </form>
     </div>
