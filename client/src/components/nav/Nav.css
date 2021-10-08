@@ -7,7 +7,9 @@
     background-color: black;
     opacity: 85%;
     height: 6rem;
-    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
   .kaimana-logo {

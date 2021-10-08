@@ -12,11 +12,11 @@ const Layout1 = (props) => {
           <Nav currentUser={props.currentUser} handleLogout={props.handleLogout}/>
         </div>
       <main>{props.children}</main>
-      <Switch>
+      {/* <Switch>
         <Route path="/">
           <Footer  />
         </Route>
-      </Switch>
+      </Switch> */}
       
     </>
   );

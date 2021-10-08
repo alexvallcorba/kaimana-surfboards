@@ -5,17 +5,15 @@ import "./Surfboards.css"
 export default function Surfboards(props) {
   return (
     <>
-      <div className="surfboards-title">
-          <h1  >SURFBOARDS</h1>
-        </div>
+     
       <div className="surfboards-list">
       
         {props.surfboards.map((surfboard) => (
           <div className="surfboard-container">
             <div className=" surfboards-name" key={surfboard.id}>
-              <p>{surfboard.name}</p>
+              <h2>{surfboard.name}</h2>
             </div>
-            <div className="surfboard-image">
+            <div className="surfboard">
               <Link to={`/surfboards/${surfboard.id}`}>
                 <img className="surfboard-image" src={surfboard.image_url} />
               </Link>

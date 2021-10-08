@@ -1,0 +1,20 @@
+.details-container {
+  display: flex;
+  height: 70%;
+  width: 95%;
+  justify-content: space-around;
+}
+
+
+.surfboard-image {
+  /* border: rgb(234, 255, 0) solid 4px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.board-image {
+  height: 500px;
+  margin-top: 25px;
+}

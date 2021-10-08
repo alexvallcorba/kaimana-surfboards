@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { getOneSurfboard } from '../../services/surfboards';
-
+import './SurfboardDetail.css'
 
 export default function SurfboardDetail(props) {
   const [surfboard, setSurfboard] = useState({})
@@ -22,21 +22,24 @@ export default function SurfboardDetail(props) {
 
   
   return (
-    <div className="surfboard-detail">
-      <div className="surfboard-name">
-        <h3>{surfboard.name}</h3>
-      </div>
+    <div className="details-container">
       <div className="surfboard-image">
-        <img src={surfboard.image_url} alt="surfboard" />
+        <h1>{surfboard.name}</h1>
+        <img className="board-image" src={surfboard.image_url} alt="surfboard" />
       </div>
       <div className="surfboard-description">
+        <h2>DESCRIPTION</h2>
         <p>{surfboard.description}</p>
-      </div><div className="surfboard-dimensions">
+        <h2>DIMENSIONS</h2>
         <p>{surfboard.dimensions}</p>
-      </div><div className="surfboard-price">
-        <p>{surfboard.price}</p>
+        <h2>PRICE</h2>
+        <h3>{surfboard.price}</h3>
       </div>
     </div>
   )
 }
+        
+        
+      
+      
       
