@@ -29,7 +29,7 @@ const Nav = (props) => {
                     <img class="kaimana-logo" alt="Kaimana Logo" src="https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633047999/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/kaimana-logo-white_pmd2fw.png"/>
                   </Link>
                     <div className="links">
-                        {props.currentUser && <div className="link welcome">Welcome, {props.currentUser.username}</div>}
+                        {props.currentUser && <div className="link welcome">Aloha, {props.currentUser.username}</div>}
                         {alwaysOptions}
                 {props.currentUser ? (
                                   <button id="signout-button" className="link" onClick={props.handleLogout} >SIGN OUT</button>

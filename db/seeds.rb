@@ -74,6 +74,26 @@ puts "#{Custom.count} customs created"
   image_url: 'https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633117802/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/Pig-surfboard_s8hs6c.png'
 )
 
+@swordfish = Surfboard.create!(
+  name: 'SWORD-FISH', 
+  description: 'The SWORD-FISH is precisely as the name implies:  A furiously fast Pelagic fish, aggressive, with a wide powerful tail, and a long-pointed nose..',
+  dimensions:7.3,
+  price: 995.00,
+  image_url: 'https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633117802/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/maysym-5_e0vumf.png'
+)
+
+@retrogun = Surfboard.create!(
+  name: 'RETRO GUN', 
+  description: 'The RETRO_GUN features low entry rocker with Rolled Vee (and lots of forward volume) and a classic “Beak” nose.  The Vee lessens through the center and increases again into an accelerated tail rocker, with deep double concave cutting through the tail curve.  The continuous Vee bottom enables a high-volume board to surf lower in the water and engage the rail. ',
+  dimensions:7.3,
+  price: 995.00,
+  image_url: 'https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633117802/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/retrogun_erl4jw.png'
+)
+
+
+
+puts "#{Surfboard.count} surfboards created"
+
 
 
 

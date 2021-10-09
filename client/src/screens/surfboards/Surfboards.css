@@ -17,8 +17,15 @@
   align-items: center;
   margin-top: 100px;
 }
+
+
 .surfboard {
   height: 400px;
+  transition: transform .2s;
+}
+
+.surfboard:hover {
+  transform: scale(1.1);
 }
 
 
