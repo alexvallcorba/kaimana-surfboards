@@ -1,7 +1,6 @@
-Footer {
-  display:flex;
-  align-items: flex-start;
-}
+
 .media-logos {
-  height: 50px;
+  height: 35px;
+  margin-left: 25px;
+
 }

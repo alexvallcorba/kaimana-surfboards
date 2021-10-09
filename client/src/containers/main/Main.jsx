@@ -15,6 +15,7 @@ import About from '../../screens/about/About'
 
 
 
+
 export default function MainContainer() {
   const [customs, setCustoms] = useState([]);
   const [surfboards, setSurfboards] = useState([]);
@@ -85,6 +86,7 @@ export default function MainContainer() {
       <Route path='/customs'>
         <Customs customs={customs}  handleCustomDelete={handleCustomDelete} />
       </Route>
+
       
       <Route path="/">
           <Home  />
