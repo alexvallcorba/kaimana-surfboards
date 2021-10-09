@@ -19,16 +19,16 @@ export default function Footer() {
   
   if (path === "/" || path === "/about" || path === "") {
     return (
-      <Link to="https://github.com/alexvallcorba">
+      <a href="https://github.com/alexvallcorba" target="_blank" rel="noopener noreferrer">
         <img className="media-logos" alt="Media Logos" src="https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633449116/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/links-logo_x4c3rq.png" />
-      </Link>
+      </a>
     );
   }
   else {
     return (
-      <Link to="https://github.com/alexvallcorba">
+      <a href="https://github.com/alexvallcorba" target="_blank" rel="noopener noreferrer">
         <img className="media-logos" alt="Media Logos" src="https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633449116/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/links-logo-black_m4puy1.png" />
-      </Link>
+      </a>
     )
     
   }

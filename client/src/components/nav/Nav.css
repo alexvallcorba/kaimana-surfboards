@@ -30,7 +30,7 @@
   .link {
     display: flex;
     flex-direction: row;
-    /* border: red 4px solid; */
+    font-size: 20px;    
     color: white;
     display: flex;
     justify-content: flex-end;
