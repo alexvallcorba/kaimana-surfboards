@@ -60,7 +60,7 @@ export default function EditCustom(props) {
           <label>ROCKER</label>
 
           <input
-            className="input3"
+            className="input4"
             type="text"
             name="rocker"
             value={formData.rocker}
@@ -69,7 +69,7 @@ export default function EditCustom(props) {
           <label>HEIGHT</label>
 
           <input
-            className="input3"
+            className="input4"
             type="text"
             name="height"
             value={formData.height}
@@ -79,7 +79,7 @@ export default function EditCustom(props) {
           <label>VOLUME</label>
 
           <input
-            className="input3"
+            className="input4"
             type="text"
             name="volume"
             value={formData.volume}
@@ -88,7 +88,7 @@ export default function EditCustom(props) {
 
           <label>TAIL WIDTH</label>
           <input
-            className="input3"
+            className="input4"
             type="text"
             name="tail_width"
             value={formData.tail_width}

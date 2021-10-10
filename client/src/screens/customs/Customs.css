@@ -1,15 +1,23 @@
 .customs-list {
   display:flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
+  height: 100%;
+  background-image: url("https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633872919/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/customs-page_bcsi0w.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center ;
 }
 
 .custom-details {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 25%;
 }
 .custom-board {
   height: 400px;

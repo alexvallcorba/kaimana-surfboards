@@ -14,7 +14,7 @@ const Layout1 = (props) => {
       <main>{props.children}</main>
       <Switch>
         <Route path="/">
-          <Footer  />
+          <Footer  className="footer"/>
         </Route>
       </Switch>
       

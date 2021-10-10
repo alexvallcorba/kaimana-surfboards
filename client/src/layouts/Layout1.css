@@ -2,7 +2,7 @@ main {
   height: 93%
 }
 
-Footer {
+.footer {
   height: 7%;
-  /* padding-left: 100px; */
+  background: none;
 }
