@@ -17,10 +17,11 @@ h1{
   text-align: center;
 }
 h3 {
-  margin-top: 40px;
+  margin-top: 0px;
+  margin-bottom: -5px;
 }
 p {
-  margin: 0px;
+  margin-top: 0px;
 }
 .surfboard-image {
   display: flex;
@@ -28,7 +29,7 @@ p {
   justify-content: center;
   height: 100%;
   margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 35px;
 
 }
 
@@ -42,9 +43,15 @@ p {
   flex-direction: column;
   justify-content: center;
   /* flex-wrap: wrap; */
+  color: white;
   align-items: flex-start;
   width: 40%;
-  height: 100%;
-  margin-top: 20px;
+  height: 80%;
+  margin-top: 135px;
+  background-color: rgb(149, 147, 147);
+  opacity: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 18px;
 }
 

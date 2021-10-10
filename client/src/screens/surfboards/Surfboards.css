@@ -3,21 +3,22 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   flex-direction: row;
-  align-items: center;
+  align-items: center ;
   height: 100%;
   background-image: url("https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633555215/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/surfboards-page_qbezg0.png");
   background-repeat: repeat;
   background-size: cover;
-  background-position: center center ;
+  background-position: center center;
 }
 
 .surfboard-container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 75px;
+  /* margin-bottom: 75px; */
   padding-top: 0px;
-  width: 25%;
+  width: 27%;
 
   
 }

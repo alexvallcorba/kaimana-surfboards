@@ -48,10 +48,10 @@ export default class Sidebar extends React.Component {
 
   unauthenticatedOptions = (
     <>
-      <NavLink onClick={() => this.closeMenu()} className="link menu-item" to="/sign-up">
+      <NavLink onClick={() => this.closeMenu()} className="bm-link menu-item" to="/sign-up">
         SIGN UP
       </NavLink>
-      <NavLink onClick={() => this.closeMenu()} className="link menu-item" to="/sign-in">
+      <NavLink onClick={() => this.closeMenu()} className="bm-link menu-item" to="/sign-in">
         SIGN IN
       </NavLink>
     </>
@@ -59,19 +59,24 @@ export default class Sidebar extends React.Component {
 
   alwaysOptions = (
     <>
-      <NavLink onClick={() => this.closeMenu()} className="link menu-item" to="/about">
+      <NavLink onClick={() => this.closeMenu()} className="bm-link menu-item" to="/about">
         ABOUT
-      </NavLink><NavLink onClick={() => this.closeMenu()} className="link menu-item" to="/surfboards">
-        SHOP
-      </NavLink><NavLink onClick={() => this.closeMenu()} className="link menu-item" to="/build-custom">
+      </NavLink>
+      <NavLink onClick={() => this.closeMenu()} className="bm-link menu-item" to="/surfboards">
+        SHOP SURFBOARDS
+      </NavLink>
+      <NavLink onClick={() => this.closeMenu()} className="bm-link menu-item" to="/build-custom">
         BUILD CUSTOM
       </NavLink>
+      <NavLink onClick={() => this.closeMenu()} className="bm-link menu-item" to="/customs">
+        CUSTOMS
+      </NavLink>
+      
     </>
   );
 
   render() {
     return (
-      // Pass on our props
       <Menu
         right
         disableAutoFocus
@@ -82,7 +87,7 @@ export default class Sidebar extends React.Component {
         <main id="page-wrap">
           {this.alwaysOptions}
           {this.props.user ? this.authenticatedOptions : this.unauthenticatedOptions}
-          <button className="link" >SIGN OUT</button>
+          <button id="bm-signout-button"className="bm-link menu-item" >SIGN OUT</button>
           </main>
       </Menu>
     )
