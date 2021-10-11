@@ -47,4 +47,7 @@
     flex-direction: column;
     align-items: center;
   }
+  .surfboard {
+    height: 350px;
+  }
 }
