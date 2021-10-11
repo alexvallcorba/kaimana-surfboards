@@ -5,3 +5,11 @@
   margin-left: 25px;
   position: fixed;
 }
+
+@media screen and (max-device-width: 480px) {
+  .media-logos {
+    height: 15px;
+
+
+  }
+}

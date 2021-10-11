@@ -24,20 +24,34 @@
   margin-bottom: 100px;
   margin-top:50px;
 
+
 }
 
 
 @media screen and (max-width: 875px) {
-  .footer {
-    height: 8%;
-  }
-  .about-paragraph {
-    font-size: 3.5vw;
-    width: 70%;
-  }
-  .about-title {
-    font-size: 6vw;
+  .about {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://res.cloudinary.com/dhkeoqhmp/image/upload/v1633951901/PROJECT-4.%20KAIMANA%20SURFBOARDS%20APP/DUKE_oqbrew.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 95px;
+
   }
 
+  .about-title {
+    display: flex;
+    text-align: center;
+  }
+.about-paragraph{
+  width: 5%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 10px;
+
+  }
 }
 
