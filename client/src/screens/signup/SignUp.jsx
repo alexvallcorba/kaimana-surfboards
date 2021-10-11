@@ -18,7 +18,7 @@ export default function SignUp(props) {
   };
 
   return (
-    <div>
+    <div className="signup-page">
       <form
         className="create-form"
         onSubmit={(e) => {

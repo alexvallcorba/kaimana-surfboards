@@ -45,3 +45,15 @@
 #b1:hover{
 color:yellow
 }
+
+
+@media screen and (max-width: 480px) {
+  .custom-details 
+   {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+}

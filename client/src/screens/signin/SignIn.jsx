@@ -17,7 +17,7 @@ export default function SignIn(props) {
   };
 
   return (
-    <div>
+    <div className="sigin-page">
       <form
         className="login-form"
         onSubmit={(e) => {

@@ -50,7 +50,15 @@
 
   
 
-
+  /* @media screen and (max-width: 480px) {
+    .nav {
+      width: 65%;
+      height: 55%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  } */
 
   @media all and (max-width: 480px) {
     .nav {

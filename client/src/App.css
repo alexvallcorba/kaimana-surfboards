@@ -4,3 +4,10 @@ body,
   height: 100vh;
   font-family: 'Cairo', sans-serif;;
 }
+
+
+@media screen and (max-device-width: 480px) {
+  .App {
+    height: 100%;
+  }
+}

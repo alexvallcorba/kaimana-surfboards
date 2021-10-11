@@ -10,7 +10,7 @@ export default function Surfboards(props) {
       
         {props.surfboards.map((surfboard) => (
           <div className="surfboard-container">
-            <div className=" surfboards-name" key={surfboard.id}>
+          <div className=" surfboards-name" key={surfboard.id}>
               <h2>{surfboard.name}</h2>
             </div>
             <div className="surfboard">

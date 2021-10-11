@@ -55,3 +55,28 @@ p {
   font-size: 18px;
 }
 
+@media screen and (max-width: 480px) {
+  .details-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .surfboard-description {
+  font-size: 9px;
+  margin-top: 50px;
+
+
+  }
+
+  h1 {
+    margin-top: 75px;
+  }
+  
+
+  .board-image {
+    height: 350px;
+  
+  }
+}

@@ -1,5 +1,7 @@
 
-  
+  .signup-page {
+    height:100vh;
+  }
   
   .create-form {
     margin-top: 150px;
@@ -39,6 +41,7 @@
   align-items: center;
   margin-top: 20px;
   margin-left: 350px;
+  margin-bottom: -100px;
   
 }
 

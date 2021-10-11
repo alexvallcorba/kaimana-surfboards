@@ -26,3 +26,18 @@
 
 }
 
+
+@media screen and (max-width: 875px) {
+  .footer {
+    height: 8%;
+  }
+  .about-paragraph {
+    font-size: 3.5vw;
+    width: 70%;
+  }
+  .about-title {
+    font-size: 6vw;
+  }
+
+}
+

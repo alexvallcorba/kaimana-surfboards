@@ -16,16 +16,13 @@
   align-items: center;
   flex-direction: column;
   margin-top: 75px;
-  /* margin-bottom: 75px; */
   padding-top: 0px;
   width: 27%;
 
   
 }
 
-/* .surfboards-name {
-margin-bottom: 0px;
-} */
+
 
 .surfboard {
   align-items: center;
@@ -41,3 +38,13 @@ margin-bottom: 0px;
 
 
   
+@media screen and (max-width: 480px) {
+  .surfboard-container 
+   {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+}
