@@ -49,7 +49,7 @@ p {
   height: 80%;
   margin-top: 135px;
   background-color: rgb(149, 147, 147);
-  opacity: 75%;
+  opacity: .75;
   padding-left: 50px;
   padding-right: 50px;
   font-size: 18px;
