@@ -1,7 +1,9 @@
 
 Kaimana-Surfboards 
 
-App for users/surfers to buy or customize a surfboard. They have to sign up to be able to create, edit  or delete  the customized surfboard. They can buy an already shaped surfboards too.
+https://kaimana-surfboards.netlify.app/
+
+App for users/surfers to buy or customize a surfboard. They have to sign up to be able to create, edit  or delete  the customized surfboard. They can buy an already shaped surfboard too.
 
 <br>
 
