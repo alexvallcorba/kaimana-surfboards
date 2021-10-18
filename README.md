@@ -3,7 +3,7 @@ Kaimana-Surfboards
 
 https://kaimana-surfboards.netlify.app/
 
-App for users/surfers to buy or customize a surfboard. They have to sign up to be able to create, edit  or delete  the customized surfboard. They can buy an already shaped surfboard too.
+Web application that allows the user to shop for surfboards from this brand and also customize their own surfboard (dimensions). Full CRUD and authentication. Utilized: React, Rubi on Rails, CSS.
 
 <br>
 
